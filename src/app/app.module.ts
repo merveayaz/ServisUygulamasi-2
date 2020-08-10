@@ -8,6 +8,8 @@ import { UserlistComponent } from './userlist/userlist.component';
 import { EdituserComponent } from './edituser/edituser.component';
 import { ViewuserComponent } from './viewuser/viewuser.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UserComponent } from './user/user.component';
+import { UserrComponent } from './userr/userr.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppuserComponent,
     UserlistComponent,
     EdituserComponent,
-    ViewuserComponent
+    ViewuserComponent,
+    UserComponent,
+    UserrComponent
   ],
   imports: [
     BrowserModule,
