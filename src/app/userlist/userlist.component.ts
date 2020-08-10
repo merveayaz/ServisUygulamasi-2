@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NgserviceService} from '../ngservice.service';
 
 @Component({
   selector: 'app-userlist',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserlistComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _service:NgserviceService) { }
 
   ngOnInit(): void {
+              this._service.fetchUserListFromRemote().subscribe(
+                    data=> console.log("Response received "),
+                    error=> console.log("Error received "),
+
+                    )
   }
+
 
 }
